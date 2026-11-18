@@ -1,27 +1,39 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
+int main(){
+    int n;
+    cout<<"Enter the rows:";
+    cin>>n;
+    int m;
+    cout<<"Enter the columns:";
+    cin>>m;
+    int arr[n][m];
 
-int main() {
-    int arr[3][3];
+    // rows wise  print the array
 
-    cout << "Enter 9 elements: ";
-
-    // Input lena 
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 3; j++) {
-            cin >> arr[i][j];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cin>>arr[i][j];
         }
     }
-
-    // Output
-    cout << "2D Array is:\n";
-
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 3; j++) {
-            cout << arr[i][j] << " ";
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<arr[i][j]<<" ";
         }
-        cout << endl;
+        cout<<endl;
     }
 
-    return 0;
+    // column wise print the array
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cin>>arr[i][j];
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
 }
